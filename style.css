@@ -1,0 +1,165 @@
+body {
+  background-color: rgb(228, 228, 228);
+  display: flex;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 1fr 6fr;
+  width: 100%;
+}
+
+.dashboard {
+  background-color: hsl(206, 46%, 42%);
+  grid-column: 1/1;
+  grid-row: 1/4;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 15px 0px 0px 10px;
+}
+.dashboard ul {
+  display: grid;
+  grid-template-rows: 2fr repeat(10, 1fr);
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0;
+  color: white;
+  font-weight: 800;
+}
+.dashboard ul li {
+  align-self: center;
+}
+.ul2 li {
+  justify-self: start;
+}
+
+
+.search {
+  background-color: rgb(255, 255, 255);
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 0.5fr 4fr 1fr 1fr 1fr;
+}
+
+.search > *{
+  place-self: center;
+}
+.search button {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.searchbar {
+  border: none;
+  background-color: rgb(208, 208, 208);
+  height: 25px;
+  width: 600px;
+  border-radius: 20px;
+}
+
+.nav {
+  background-color: rgb(255, 255, 255);
+  grid-column: 2/4;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nav-1 {
+  justify-self: start;
+  margin-left: 30px;
+  display: grid;
+}
+
+.nav-2 {
+  justify-self: end;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 450px;
+}
+
+.nav-2 button {
+  place-self: center;
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(53, 152, 201);
+  cursor: pointer;
+}
+
+.article-container {
+  background-color: rgb(228, 228, 228);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 10fr;
+  gap: 20px;
+  padding: 30px;
+}
+.art-inner {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.top {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: end;
+}
+.top p {
+  display: inline-block;
+}
+
+.p1 {
+  justify-self: start;
+}
+
+.announcements {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  align-self: end;
+}
+
+.article2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.article2 .article {
+  height: 200px;
+}
+ 
+.announcements p{
+  display: inline-block;
+}
+
+
+.article {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  border-radius: 10px;
+  padding: 10px;
+  height: 180px;
+  box-shadow: 13px 11px 22px -7px rgba(173,173,173,0.5);
+  background-color: rgb(255, 255, 255);
+}
+
+.article button {
+  border: none;
+  background-color: white;
+}
+
+.btn-cont {
+  justify-self: end;
+}
