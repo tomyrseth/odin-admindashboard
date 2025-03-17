@@ -160,6 +160,10 @@ body {
   background-color: white;
 }
 
+.art-inner .article {
+  border-left: solid 8px orange;
+}
+
 .btn-cont {
   justify-self: end;
 }
